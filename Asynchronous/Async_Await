@@ -1,0 +1,10 @@
+async function fetchData() {
+  let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Data fetched successfully"), 2000);
+  });
+
+  let result = await promise; // Promise execute hoer por akhan a result asbe
+  console.log(result); // Output: Data fetched successfully
+}
+
+fetchData();
