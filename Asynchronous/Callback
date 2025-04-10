@@ -1,0 +1,11 @@
+function fetchData(callback) {
+  setTimeout(() => {
+    console.log("Data fetched");
+    callback();
+  }, 2000);
+}
+
+fetchData(() => {
+  console.log("Callback function executed");
+});
+//when fetchData function complete than callbackfunction call
