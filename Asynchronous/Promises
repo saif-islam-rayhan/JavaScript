@@ -1,0 +1,15 @@
+let promise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if (success) {
+    resolve("Data fetched successfully");
+  } else {
+    reject("Error occurred while fetching data");
+  }
+});
+
+promise.then(result => {
+  console.log(result); // Output: Data fetched successfully
+}).catch(error => {
+  console.log(error); // Error handling
+});
