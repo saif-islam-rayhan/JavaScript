@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Selection Example</title>
+</head>
+<body>
+  <div id="container">
+    <p class="text">This is a paragraph inside the container.</p>
+  </div>
+  <p class="text">This is a paragraph outside the container.</p>
+
+  <script>
+    // Using querySelector() to select an element by id
+    const containerById = document.querySelector('#container');
+    console.log(containerById); // <div id="container">...</div>
+
+    // Using querySelector() to select elements by class
+    const paragraphsByClass = document.querySelectorAll('.text');
+    console.log(paragraphsByClass); // NodeList [ <p class="text">...</p>, <p class="text">...</p> ]
+  </script>
+</body>
+</html>
