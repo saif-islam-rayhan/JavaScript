@@ -1,0 +1,7 @@
+//random
+const randomNumber = Math.random();
+console.log(randomNumber);
+///Floor
+console.log(Math.floor(4.7)); // 4
+///ceil
+console.log(Math.ceil(4.3)); // 5
